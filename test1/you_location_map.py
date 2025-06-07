@@ -18,5 +18,18 @@ def you_location_map() -> None:
     fig.show()
     # source code --> clcoding.com
 
+def test():
+    x = False
+    y = True
+    z = False
+    print(not x and (y or z and not y))
+
+def is_even(number):
+    if number % 2:
+        return True
+        return False
+
 if __name__ == '__main__':
-    you_location_map()
+    # you_location_map()
+    # test()
+    print(is_even(2))
