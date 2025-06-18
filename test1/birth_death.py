@@ -16,14 +16,14 @@ def plot_births_deaths(df: pd.DataFrame) -> None:
     """Plot annual births and deaths with professional styling."""
     fig, ax = plt.subplots(figsize=(12, 6))
 
-    ax.plot(df["Year"], df["Births"], label="Births", linewidth=2)
-    ax.plot(df["Year"], df["Deaths"], label="Deaths", linewidth=2)
+    ax.plot(df["Year"], df["Births"], label="Births", linewidth=1)
+    ax.plot(df["Year"], df["Deaths"], label="Deaths", linewidth=1)
 
     ax.set_title("China Annual Births and Deaths (1949–2024)")
     ax.set_xlabel("Year")
     ax.set_ylabel("Number of People")
     ax.legend()
-    ax.grid(True, linestyle="--", linewidth=0.5)
+    ax.grid(True, linestyle="--", linewidth=0.1)
 
     plt.tight_layout()
     plt.show()
